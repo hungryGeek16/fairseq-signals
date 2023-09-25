@@ -67,7 +67,7 @@ Given a directory that contains pre-processed data:
 $ python fairseq_signals/data/ecg/preprocess/manifest.py \
     /path/to/data/ \
     --dest /path/to/manifest \
-    --valid-percent $valid
+    --pretrain-valid-percent $valid
 ```
 # Prepare training data manifest
 Before training, you should prepare training data manifest required for training CLOCS model.
