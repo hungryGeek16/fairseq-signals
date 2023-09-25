@@ -119,11 +119,11 @@ def main(args):
 
                 if args.ext == "mat":
                     data = scipy.io.loadmat(file_path)
-                    if "feats" not in length:
+"""                    if "feats" not in length:
                         raise AssertionError(
                             "each data file should contain ECG signals as a value of the key "
                             "'feats' for support efficient batching in the training step."
-                        )
+                        )""" #Unnecessary
                     length = data["feats"].shape[-1]
 
                     print(
