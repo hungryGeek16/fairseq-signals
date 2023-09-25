@@ -77,7 +77,7 @@ def main(args):
 
     root_path = os.path.realpath(args.root)
     pretrain_subset = [x.strip() for x in args.pretrain_subset.split(",")]
-    finetune_subset = [x.strip() for x in args.combine_subsets.split(",")]
+    finetune_subset = [x.strip() for x in args.finetune_subsets.split(",")]
     rand = random.Random(args.seed)
 
     def random_split(fnames, valid_percent):
